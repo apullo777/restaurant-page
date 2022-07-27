@@ -1,0 +1,198 @@
+html, body, #content{
+    height: 100%;
+}
+
+body{
+    padding: 0%;
+    margin: 0px;
+    background-color: #030522;
+}
+
+#background{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/paper-tear-bg.png);
+    background-size: cover;
+}
+
+#parallax-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#ball-container{
+    position: fixed;
+    z-index: -2;
+    left: -8%;
+    top: -6%;
+    width: 110%;
+}
+
+#background-digital{
+    width: 110%;
+    opacity: 0.2;
+}
+
+#zero-container{
+    position: fixed;
+    top: 7%;
+    left: 20%;
+    z-index: -1;
+}
+
+#spiral-container{
+    position: fixed;
+    z-index: -2;
+    left: -8%;
+    top: -6%;
+    width: 110%;
+}
+
+#zero{
+    width: 65vw;
+}
+
+#header {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 19.5%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#content{
+    overflow: hidden;
+}
+
+#z-emblem {
+    margin-top: 2.1%;
+    margin-left: 1.6%;
+    object-fit: cover;
+    width:21.4%;
+    height: auto;
+    cursor: pointer;
+}
+
+#z-emblem:hover{
+    animation: pulse 0.15s;
+}
+
+#char-page {
+    position: relative;
+    width: 12.7%;
+    height: auto;
+    right: 4.38%;
+    bottom: 5.03%;
+    cursor: pointer;
+}
+
+#char-page:hover{
+    animation: pulse 0.15s;
+}
+
+#z-chaser {
+    position: relative;
+    width: 14.85%;
+    height: auto;
+    bottom: 20.12%;
+    right: 4.17%;
+    cursor: pointer;
+}
+
+#z-chaser:hover{
+    animation: pulse 0.15s;
+}
+
+#footer{
+    display: flex;
+    width: 100%;
+    height: 40.49%;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+#Take-your-heart {
+	object-fit: contain;
+	width: 17.4%;
+	margin-left: 2.6%;
+    margin-bottom: 2.6%;
+    cursor: pointer;
+}
+
+#Take-your-heart:hover {
+    animation: tada 1s;
+}
+
+#food {
+	display: flex;
+	position: relative;
+	right: 2.87%;
+    bottom: 15.74%;
+    width: 26.05%;
+    cursor: pointer;
+}
+
+#pickachu-food {
+	object-fit: contain;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#food:hover > #pickachu-food{
+    transform: scale(1.1);
+    filter: drop-shadow(20px 20px #fe2b10);
+    transition: all 0.2s ease-out;
+}
+
+#food:hover > #battle-menu-left{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.2s ease-out;
+    animation: zoomInLeft 0.2s;
+}
+
+#food:hover > #battle-menu-right{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.2s ease-out;
+    animation: zoomInRight 0.2s;
+}
+
+#battle-menu-left {
+    visibility: hidden;
+    opacity: 0;
+	position: absolute;
+	left: -29%;
+	top: -11.4%;
+	object-fit: contain;
+    width: 50.4%;
+}
+
+#battle-menu-right {
+    visibility: hidden;
+    opacity: 0;
+	position: absolute;
+	object-fit: contain;
+	width: 63.39%;
+	left: 47%;
+    bottom: 19.38%;
+}
+
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.75;
+    z-index: -2;
+}
